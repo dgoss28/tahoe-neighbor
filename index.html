@@ -54,6 +54,17 @@
             line-height: 1.7;
             color: #1a1a2e;
             background: #fafafa;
+            position: relative;
+        }
+
+        .bg-wave {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
         }
 
         /* Navbar */
@@ -104,31 +115,7 @@
             align-items: center;
             text-align: center;
             padding: 120px 20px 80px;
-            background: linear-gradient(180deg, #e8f4f8 0%, #fafafa 100%);
             position: relative;
-            overflow: hidden;
-        }
-
-        header::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 800px;
-            height: 800px;
-            background: radial-gradient(circle, rgba(15, 76, 117, 0.08) 0%, transparent 70%);
-            border-radius: 50%;
-        }
-
-        header::after {
-            content: '';
-            position: absolute;
-            bottom: -30%;
-            left: -10%;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(60, 145, 230, 0.06) 0%, transparent 70%);
-            border-radius: 50%;
         }
 
         .hero-content {
@@ -399,6 +386,20 @@
 </head>
 
 <body>
+    <svg class="bg-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="none">
+        <defs>
+            <linearGradient id="wave-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#0f4c75" stop-opacity="0.06"/>
+                <stop offset="50%" stop-color="#3c91e6" stop-opacity="0.04"/>
+                <stop offset="100%" stop-color="#0f4c75" stop-opacity="0.02"/>
+            </linearGradient>
+        </defs>
+        <path d="M0,160 C320,260 420,60 720,160 C1020,260 1120,80 1440,180 L1440,0 L0,0 Z" fill="url(#wave-grad)"/>
+        <path d="M0,320 C240,220 480,400 720,320 C960,240 1200,380 1440,300 L1440,0 L0,0 Z" fill="#3c91e6" opacity="0.03"/>
+        <path d="M0,500 C360,580 600,440 900,520 C1200,600 1320,460 1440,500 L1440,900 L0,900 Z" fill="#0f4c75" opacity="0.03"/>
+        <path d="M0,700 C200,640 500,760 720,700 C940,640 1200,740 1440,680 L1440,900 L0,900 Z" fill="#3c91e6" opacity="0.04"/>
+    </svg>
+
     <nav>
         <div class="logo">Tahoe Neighbor</div>
         <ul class="nav-links">
