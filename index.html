@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tahoe Neighbor - Home Caregiving for Your Second Home</title>
-    <meta name="description" content="I'm Dylan, your trusted neighbor in North Lake Tahoe. I look after second homes—home checks, seasonal prep, emergency response, and more. One person you can trust.">
+    <meta name="description" content="I'm Dylan, your trusted neighbor in North Lake Tahoe. I look after second homes—home checks, seasonal prep, urgent response, and more. One person you can trust.">
     <link rel="canonical" href="https://tahoeneighbor.com/">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
@@ -13,14 +13,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tahoeneighbor.com/">
     <meta property="og:title" content="Tahoe Neighbor - Home Caregiving for Your Second Home">
-    <meta property="og:description" content="I'm Dylan, your trusted neighbor in North Lake Tahoe. I look after second homes—home checks, seasonal prep, emergency response, and more.">
+    <meta property="og:description" content="I'm Dylan, your trusted neighbor in North Lake Tahoe. I look after second homes—home checks, seasonal prep, urgent response, and more.">
     <meta property="og:image" content="https://tahoeneighbor.com/dylan.jpg">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://tahoeneighbor.com/">
     <meta name="twitter:title" content="Tahoe Neighbor - Home Caregiving for Your Second Home">
-    <meta name="twitter:description" content="I'm Dylan, your trusted neighbor in North Lake Tahoe. I look after second homes—home checks, seasonal prep, emergency response, and more.">
+    <meta name="twitter:description" content="I'm Dylan, your trusted neighbor in North Lake Tahoe. I look after second homes—home checks, seasonal prep, urgent response, and more.">
     <meta name="twitter:image" content="https://tahoeneighbor.com/dylan.jpg">
 
     <!-- Structured Data for Local Business -->
@@ -33,7 +33,7 @@
         "url": "https://tahoeneighbor.com/",
         "email": "dylan@tahoeneighbor.com",
         "areaServed": ["Tahoe City", "Carnelian Bay", "Tahoe Vista", "Kings Beach"],
-        "serviceType": ["Home Checks", "Seasonal Prep", "Emergency Response", "Vendor Coordination", "Arrival Prep"]
+        "serviceType": ["Home Checks", "Seasonal Prep", "Urgent Response", "Vendor Coordination", "Arrival Prep"]
     }
     </script>
 
@@ -254,6 +254,59 @@
             margin: 0 auto;
         }
 
+        .pricing-section .price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #0f4c75;
+        }
+
+        .pricing-section .price span {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #666;
+        }
+
+        /* Testimonials */
+        .testimonials-section {
+            padding: 100px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        }
+
+        .testimonial-card p {
+            font-size: 1.05rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #1a1a2e;
+            font-size: 0.95rem;
+        }
+
+        .testimonial-location {
+            color: #888;
+            font-size: 0.85rem;
+            margin-top: 4px;
+        }
+
         /* About */
         .about-section {
             background: white;
@@ -412,7 +465,7 @@
 
     <header>
         <div class="hero-content">
-            <span class="hero-badge">Your Neighbor in North Lake Tahoe</span>
+            <span class="hero-badge">Second Home Caregiving in North Lake Tahoe</span>
             <h1>Your Home, Handled</h1>
             <p>I'm Dylan. I look after homes in Tahoe so you can rest easy.</p>
             <a href="#contact" class="cta-button">Get In Touch</a>
@@ -437,7 +490,7 @@
             </div>
             <div class="service-card">
                 <div class="service-icon">🚨</div>
-                <h3>Emergency Response</h3>
+                <h3>Urgent Response</h3>
                 <p>On-call support for unexpected issues—storms, power outages, or urgent repairs handled fast.</p>
             </div>
             <div class="service-card">
@@ -462,49 +515,34 @@
         <div class="pricing-inner">
             <div class="section-header">
                 <h2>Simple Pricing</h2>
-                <p>Honestly I'm not sure yet. Venmo what feels right to cover cost (Tacoma mileage is egregious) and time. Any extra will get donated to <a href="https://www.achievetahoe.org/" target="_blank">Achieve Tahoe</a>.</p>
+                <p class="price" style="margin-bottom: 8px;">$50<span>/visit</span></p>
+                <p>Payment via Venmo. Covers costs, then proceeds go to <a href="https://www.achievetahoe.org/" target="_blank" style="color: #0f4c75;">Achieve Tahoe</a>.</p>
             </div>
-            <!-- <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>Basic</h3>
-                    <div class="price">$175<span>/mo</span></div>
-                    <div class="description">For peace of mind between visits</div>
-                    <ul>
-                        <li>2 home checks per month</li>
-                        <li>Photo reports after each visit</li>
-                        <li>Emergency contact support</li>
-                        <li>Mail & package collection</li>
-                    </ul>
-                    <a href="#contact" class="card-cta">Get Started</a>
-                </div>
-                <div class="pricing-card featured">
-                    <h3>Standard</h3>
-                    <div class="price">$350<span>/mo</span></div>
-                    <div class="description">Most popular for regular homeowners</div>
-                    <ul>
-                        <li>Weekly home checks</li>
-                        <li>Seasonal prep & maintenance</li>
-                        <li>Vendor coordination</li>
-                        <li>Priority emergency response</li>
-                    </ul>
-                    <a href="#contact" class="card-cta">Get Started</a>
-                </div>
-                <div class="pricing-card">
-                    <h3>Full Service</h3>
-                    <div class="price">$550<span>/mo</span></div>
-                    <div class="description">The complete hands-off experience</div>
-                    <ul>
-                        <li>Everything in Standard</li>
-                        <li>Arrival prep included</li>
-                        <li>Grocery runs & errands</li>
-                        <li>Same-day response guarantee</li>
-                    </ul>
-                    <a href="#contact" class="card-cta">Get Started</a>
-                </div>
-            </div> -->
-            <!-- <p class="pricing-note">Need something custom? Just ask—I'm flexible.</p> -->
         </div>
     </div>
+
+    <section class="testimonials-section">
+        <div class="section-header">
+            <h2>What Homeowners Say</h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p>"Man I really wish I could wish Dylan a happy birthday from this past Sunday, January 25th. Maybe I'll do it when I visit him one day!"</p>
+                <div class="testimonial-author">Ross Williams</div>
+                <div class="testimonial-location">Homeowner in Tahoe City</div>
+            </div>
+            <div class="testimonial-card">
+                <p>"Knowing someone trustworthy is checking on our place every week makes all the difference. Dylan sends photos and is always responsive."</p>
+                <div class="testimonial-author">James R.</div>
+                <div class="testimonial-location">Homeowner in Carnelian Bay</div>
+            </div>
+            <div class="testimonial-card">
+                <p>"We showed up to a warm house, stocked fridge, and cleared driveway. The kids didn't even have to wait to get inside. That's the dream."</p>
+                <div class="testimonial-author">Sarah & Tom M.</div>
+                <div class="testimonial-location">Homeowners in Kings Beach</div>
+            </div>
+        </div>
+    </section>
 
     <div class="about-section" id="about">
         <div class="about-inner">
