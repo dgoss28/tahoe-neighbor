@@ -39,7 +39,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
     <style>
         * {
             margin: 0;
@@ -263,107 +265,6 @@
         .pricing-inner {
             max-width: 1100px;
             margin: 0 auto;
-        }
-
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .pricing-card {
-            background: #fafafa;
-            border-radius: 20px;
-            padding: 40px;
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-        }
-
-        .pricing-card.featured {
-            background: linear-gradient(135deg, #0f4c75 0%, #1a5a8a 100%);
-            color: white;
-            transform: scale(1.02);
-        }
-
-        .pricing-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .pricing-card.featured:hover {
-            transform: scale(1.02) translateY(-5px);
-        }
-
-        .pricing-card h3 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-
-        .pricing-card .price {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-
-        .pricing-card .price span {
-            font-size: 1rem;
-            font-weight: 400;
-            opacity: 0.7;
-        }
-
-        .pricing-card .description {
-            font-size: 0.95rem;
-            opacity: 0.7;
-            margin-bottom: 24px;
-        }
-
-        .pricing-card ul {
-            list-style: none;
-            margin-bottom: 30px;
-        }
-
-        .pricing-card ul li {
-            padding: 10px 0;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-            font-size: 0.95rem;
-        }
-
-        .pricing-card.featured ul li {
-            border-bottom-color: rgba(255, 255, 255, 0.15);
-        }
-
-        .pricing-card ul li:last-child {
-            border-bottom: none;
-        }
-
-        .pricing-card .card-cta {
-            display: block;
-            text-align: center;
-            padding: 14px 28px;
-            background: #0f4c75;
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .pricing-card.featured .card-cta {
-            background: white;
-            color: #0f4c75;
-        }
-
-        .pricing-card .card-cta:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .pricing-note {
-            text-align: center;
-            margin-top: 40px;
-            color: #666;
-            font-size: 0.95rem;
         }
 
         /* About */
@@ -613,7 +514,7 @@
                     <p>By day, I work full time as a software engineer (not a web dev, don't worry). But I'm always trying to find ways to best support the community in Tahoe.</p>
                     <p>When you hire me, you get one person you can trust. No call centers, no strangers. Just a reliable neighbor who treats your home right.</p>
                 </div>
-                <div class="about-image"><img src="dylan.jpg" alt="Dylan"></div>
+                <div class="about-image"><img src="dylan.jpg" alt="Dylan" loading="lazy"></div>
             </div>
         </div>
     </div>
